@@ -1,4 +1,6 @@
-﻿namespace MAUIFlyout.POC
+﻿using MAUIFlyout.POC.Utils;
+
+namespace MAUIFlyout.POC
 {
     public partial class MainPage : ContentPage
     {
@@ -28,9 +30,7 @@
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            var appShell = Application.Current.MainPage as AppShell;
-            var profItem = appShell.Items.FirstOrDefault(item => item.Title == "Profile");
-            Shell.Current.CurrentItem = profItem;
+            MiscUtils.SetFlyoutItem("Profile");
         }
     }
 }

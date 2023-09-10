@@ -8,10 +8,22 @@
     xmlns:views="clr-namespace:MAUIFlyout.POC.Views"
     Shell.FlyoutBehavior="Flyout">
 
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="10" HeightRequest="70" BackgroundColor="Pink">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </StackLayout.GestureRecognizers>
+            <Label Text="Header : Profile"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+    
     <ShellContent Title="Profile" ContentTemplate="{DataTemplate flyoutViews:Profile}" Route="Profile"
                   FlyoutItemIsVisible="False"/>
     
-    <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+    <ShellContent Title="MainPage" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" 
+                  FlyoutItemIsVisible="False"/>
 
     <ShellContent Title="Settings" ContentTemplate="{DataTemplate flyoutViews:Settings}" Route="Settings" />
+    
+    <ShellContent Title="Dummy" ContentTemplate="{DataTemplate flyoutViews:Dummy}" Route="Dummy" />
 </Shell>
