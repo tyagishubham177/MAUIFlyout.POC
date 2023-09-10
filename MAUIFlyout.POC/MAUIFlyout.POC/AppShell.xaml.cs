@@ -21,5 +21,10 @@ namespace MAUIFlyout.POC
         {
             MiscUtils.SetFlyoutItem("Profile");
         }
+
+        private void MenuItem_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new LoginPage());
+        }
     }
 }

@@ -26,4 +26,6 @@
     <ShellContent Title="Settings" ContentTemplate="{DataTemplate flyoutViews:Settings}" Route="Settings" />
     
     <ShellContent Title="Dummy" ContentTemplate="{DataTemplate flyoutViews:Dummy}" Route="Dummy" />
+
+    <MenuItem Text="Logout" Clicked="MenuItem_Clicked"/>
 </Shell>

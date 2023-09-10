@@ -62,6 +62,12 @@
 	  <MauiXaml Update="Views\Flyout\Settings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\ForgotPassword.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\MainPageDetail.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
